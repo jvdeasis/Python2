@@ -1,6 +1,6 @@
-from iexfinance.stocks import get_historical_data
+from iexfinance.stocks import Stock
 
-aapl = Stock('AAPL', output_format ='pandas')
-print(aapl.get_balance_sheet())
-
+aapl = Stock('WM')
+x = aapl.get_quote()
+print(x)
 'why isn\'t this working'
